@@ -1,28 +1,29 @@
 import React, { Fragment, useState} from "react";
- 
-/**
- * Challenge: Using hooks, track the state of the text in the textarea on every keystroke
- * To verify it's working, you could just console.log the state on every change
- * 
- * https://scrimba.com/p/p7P5Hd/cW8Jdfy
- */
 
+/**
+ * Challenge:
+ * 
+ * Create a function to calculate the number of separate words in the `text` state
+ * For now, just console.log the word count when the button gets clicked to test it out.
+ */
+ 
 function App() {
 
-  const [ words, setWords ] = useState({words: ""});
+  const [ text, setText ] = useState();
 
   function handleChange(e){
-    const { name, value } = e.target;
+    const {value} = e.target;
 
-    setWords(prevWords => ({...prevWords, [name] : value}))
+    setText(value)
   }
-console.log(words)
+
+
+console.log(text)
   return (
     <Fragment>
       <h1>Speed Typing Game</h1>
       <textarea
-      name="words"
-      value={words.words}
+      value={text}
       onChange={handleChange} 
       />
       <h4>Time remaining: </h4>
