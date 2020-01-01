@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment, useState} from "react";
+ 
+/**
+ * Challenge: Using hooks, track the state of the text in the textarea on every keystroke
+ * To verify it's working, you could just console.log the state on every change
+ * 
+ * https://scrimba.com/p/p7P5Hd/cW8Jdfy
+ */
 
 function App() {
+
+  const [ words, setWords ] = useState({words: ""});
+
+  function handleChange(e){
+    const { name, value } = e.target;
+
+    setWords(prevWords => ({...prevWords, [name] : value}))
+  }
+console.log(words)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <h1>Speed Typing Game</h1>
+      <textarea
+      name="words"
+      value={words.words}
+      onChange={handleChange} 
+      />
+      <h4>Time remaining: </h4>
+      <button>Start Game</button>
+      <h1>Word Count: </h1>
+    </Fragment>
   );
 }
 
