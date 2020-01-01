@@ -10,6 +10,7 @@ import React, { Fragment, useState} from "react";
 function App() {
 
   const [ text, setText ] = useState();
+  const [ words , setWords ] = useState();
 
   function handleChange(e){
     const {value} = e.target;
@@ -17,6 +18,13 @@ function App() {
     setText(value)
   }
 
+  function calculateWords(text){
+    const wordsInTextArea = text.split(" ").length
+
+    setWords(wordsInTextArea);
+  }
+
+  console.log("words: ", words)
 
 console.log(text)
   return (
@@ -27,7 +35,8 @@ console.log(text)
       onChange={handleChange} 
       />
       <h4>Time remaining: </h4>
-      <button>Start Game</button>
+      <button >Start Game</button>
+      <button onClick={calculateWords}>calculate words</button>
       <h1>Word Count: </h1>
     </Fragment>
   );
