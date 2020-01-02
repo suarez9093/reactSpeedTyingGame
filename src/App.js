@@ -55,6 +55,7 @@ function App() {
   return (
     <div className="container">
       <h1>Speed Typing Game</h1>
+      <h3>Click start and type as many words as you can before the timer runs out</h3>
       <textarea
         disabled={!isTimeRunning}
         value={text}
