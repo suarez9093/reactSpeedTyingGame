@@ -12,7 +12,7 @@
     A speed typing game built using React.
     <br />
     <br />
-    <a href="">View live Demo</a>
+    <a href="https://suarez9093.github.io/reactSpeedTyingGame/">View live Demo</a>
   </p>
 </p>
 
