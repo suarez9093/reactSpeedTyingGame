@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reactSpeedTyingGame/static/css/main.9ebf0575.chunk.css",
+    "main.js": "/reactSpeedTyingGame/static/js/main.1426cc0e.chunk.js",
+    "main.js.map": "/reactSpeedTyingGame/static/js/main.1426cc0e.chunk.js.map",
+    "runtime-main.js": "/reactSpeedTyingGame/static/js/runtime-main.285c615d.js",
+    "runtime-main.js.map": "/reactSpeedTyingGame/static/js/runtime-main.285c615d.js.map",
+    "static/js/2.b65aa7c5.chunk.js": "/reactSpeedTyingGame/static/js/2.b65aa7c5.chunk.js",
+    "static/js/2.b65aa7c5.chunk.js.map": "/reactSpeedTyingGame/static/js/2.b65aa7c5.chunk.js.map",
+    "index.html": "/reactSpeedTyingGame/index.html",
+    "precache-manifest.c38d3190297bbf85d57c51556b47cf8b.js": "/reactSpeedTyingGame/precache-manifest.c38d3190297bbf85d57c51556b47cf8b.js",
+    "service-worker.js": "/reactSpeedTyingGame/service-worker.js",
+    "static/css/main.9ebf0575.chunk.css.map": "/reactSpeedTyingGame/static/css/main.9ebf0575.chunk.css.map",
+    "static/js/2.b65aa7c5.chunk.js.LICENSE": "/reactSpeedTyingGame/static/js/2.b65aa7c5.chunk.js.LICENSE",
+    "static/media/style.css": "/reactSpeedTyingGame/static/media/lukas-blazek-EWDvHNNfUmQ-unsplash.c4cfed74.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.285c615d.js",
+    "static/js/2.b65aa7c5.chunk.js",
+    "static/css/main.9ebf0575.chunk.css",
+    "static/js/main.1426cc0e.chunk.js"
+  ]
+}
