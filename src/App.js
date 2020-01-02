@@ -3,14 +3,16 @@ import React, { Fragment, useState, useEffect } from "react";
 /**
  * Challenge:
  * 
- * 1. Create state to hold the current value of the countdown timer.
- *    Display this time in the "Time Remaining" header
+ * Make it so clicking the Start button starts the timer instead of it starting on refresh
+ * (Hint: use a new state variable to indicate if the game should be running or not)
  */
+
 
 function App() {
 
   const [text, setText] = useState();
-  const [timer, setTimer] = useState(5);
+  const [timeRemaining, setTimeRemaining] = useState(5);
+  const [ isTimeRunning , setIsTimeRunning ] = useState(false);
 
   function handleChange(e) {
     const { value } = e.target;
@@ -25,13 +27,17 @@ function App() {
   }
 
 
-  useEffect(() => {
-    if(timer !== 0){
-      setTimeout(() => {
-        setTimer(timeRemaining => timeRemaining - 1);
-      }, 1000)
-    }
-  }, [timer])
+
+      useEffect(() => {
+        if(isTimeRunning && timeRemaining !== 0){
+          setTimeout(() => {
+            setTimeRemaining(time => time - 1);
+          }, 1000)
+        } else if(timeRemaining === 0 ){
+          setIsTimeRunning(false)
+          console.log("isTimeRunning: ",isTimeRunning)
+        }
+      }, [timeRemaining,isTimeRunning])
 
   return (
     <Fragment>
@@ -40,9 +46,9 @@ function App() {
         value={text}
         onChange={handleChange}
       />
-      <h4>Time remaining: {timer} seconds </h4>
-      <button >Start Game</button>
-      <button onClick={() => console.log(calculateWordCount(text))}>calculate words</button>
+      <h4>Time remaining: {timeRemaining} seconds </h4>
+      <button onClick={() => setIsTimeRunning(true)}>Start Game</button>
+      {/* <button onClick={() => console.log(calculateWordCount(text))}>calculate words</button> */}
       <h1>Word Count: </h1>
     </Fragment>
   );
