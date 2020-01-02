@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
   const [isTimeRunning, setIsTimeRunning] = useState(false);
   const [wordCount, setWordCount] = useState(0);
   const [wordsPerMinute, setWordsPerMinute] = useState();
+  const textBoxRef = useRef(null);
 
   function handleChange(e) {
     const { value } = e.target;
@@ -27,6 +28,8 @@ function App() {
     setIsTimeRunning(true)
     setWordCount(0)
     setText("")
+    textBoxRef.current.disabled = false
+    textBoxRef.current.focus()
   }
 
   function endGame() {
@@ -57,9 +60,11 @@ function App() {
       <h1>Speed Typing Game</h1>
       <h3>Click start and type as many words as you can before the timer runs out</h3>
       <textarea
+      ref={textBoxRef}
         disabled={!isTimeRunning}
         value={text}
         onChange={handleChange}
+        
       />
       <h4>Time remaining: {timeRemaining} seconds </h4>
       <button disabled={isTimeRunning} onClick={startGame}>Start Game</button>
