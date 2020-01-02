@@ -16,7 +16,7 @@ button {
     font-family: "Times New Roman", Times, serif;
     display: block;
     margin: 0 auto;
-    border: black;
+    border: 2px solid black;
     background: #a80020;
     background: yellow;
     padding: 10px 20px;
