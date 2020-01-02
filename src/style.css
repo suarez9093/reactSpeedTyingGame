@@ -1,45 +1,81 @@
-html, body {
-    background: white;
-    color: black;
-    margin:0;
-    padding: 0;
-    padding-top: 10px;
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
+html,
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  padding-top: 10px;
+  font-family: Courier, monospace;
+  text-align: center;
 }
 
 body {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 button {
-    font-family: "Times New Roman", Times, serif;
-    display: block;
-    margin: 0 auto;
-    border: 2px solid black;
-    background: #a80020;
-    background: yellow;
-    padding: 10px 20px;
-    text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 40px;
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 0px -1px 0px #000000;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border-top: 1px solid #fff;
+  -webkit-box-shadow: 0px 2px 14px #000;
+  box-shadow: 0px 2px 14px #000;
+}
+
+button:disabled {
+  opacity: 20%;
 }
 
 h1 {
-    font-size: 50px;
-    text-align:center;
+  font-size: 40px;
+  text-align: center;
+}
+
+h4 {
+  font-size: 30px;
 }
 
 textarea {
-    font-family: "Times New Roman", Times, serif;
-    border: 3px solid black;
-    width: 90%;
-    margin: 0 auto;
-    outline: none;
-    height: 200px;
-    background: yellow;
-    padding: 10px;
-    font-size: large;
+  width: 500px;
+  height: 200px;
+  overflow: hidden;
+  background-color: #fff;
+  color: #222;
+  font-family: Courier, monospace;
+  font-weight: normal;
+  font-size: 24px;
+  resize: none;
+  line-height: 40px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 45px;
+  padding-bottom: 34px;
+  background-image: url(https://static.tumblr.com/maopbtg/E9Bmgtoht/lines.png),
+    url(https://static.tumblr.com/maopbtg/nBUmgtogx/paper.png);
+  background-repeat: repeat-y, repeat;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 14px #000;
+  box-shadow: 0px 2px 14px #000;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 textarea:disabled {
-    background-color: #a5a2a2;
+  opacity: 20%;
+}
+
+body {
+  background-image: url("./img/lukas-blazek-EWDvHNNfUmQ-unsplash.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }

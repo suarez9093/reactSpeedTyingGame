@@ -8,7 +8,7 @@ function App() {
   const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME);
   const [isTimeRunning, setIsTimeRunning] = useState(false);
   const [wordCount, setWordCount] = useState(0);
-  const [ wordsPerMinute, setWordsPerMinute ] = useState();
+  const [wordsPerMinute, setWordsPerMinute] = useState();
 
   function handleChange(e) {
     const { value } = e.target;
@@ -34,10 +34,10 @@ function App() {
     calculateWordCount(text)
   }
 
-  function calculateWordsPerMinute(){
+  function calculateWordsPerMinute() {
     let time = 60 + STARTING_TIME;
-    let words = `You type ${Math.round(wordCount/time * 60)} wpm`;
-    setWordsPerMinute(words) 
+    let words = `You type ${Math.round(wordCount / time * 60)} wpm`;
+    setWordsPerMinute(words)
   };
 
   useEffect(() => {
@@ -53,7 +53,7 @@ function App() {
   }, [timeRemaining, isTimeRunning])
 
   return (
-    <Fragment>
+    <div className="container">
       <h1>Speed Typing Game</h1>
       <textarea
         disabled={!isTimeRunning}
@@ -64,7 +64,7 @@ function App() {
       <button disabled={isTimeRunning} onClick={startGame}>Start Game</button>
       <h1>Word Count: {wordCount}</h1>
       <h1>{wordsPerMinute}</h1>
-    </Fragment>
+    </div>
   );
 }
 
