@@ -2,8 +2,8 @@
 
 {
   
-  "homepage": "https://suarez9093.github.io/speed-typing-game/",
-  "name": "speed-typing-game",
+  "homepage": "https://suarez9093.github.io/reactSpeedTyingGame/",
+  "name": "reactSpeedTyingGame",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
