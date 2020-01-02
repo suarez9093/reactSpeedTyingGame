@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/speed-typing-game/static/css/main.348232f0.chunk.css",
-    "main.js": "/speed-typing-game/static/js/main.3b4f7c87.chunk.js",
-    "main.js.map": "/speed-typing-game/static/js/main.3b4f7c87.chunk.js.map",
-    "runtime-main.js": "/speed-typing-game/static/js/runtime-main.a553ce49.js",
-    "runtime-main.js.map": "/speed-typing-game/static/js/runtime-main.a553ce49.js.map",
-    "static/js/2.b65aa7c5.chunk.js": "/speed-typing-game/static/js/2.b65aa7c5.chunk.js",
-    "static/js/2.b65aa7c5.chunk.js.map": "/speed-typing-game/static/js/2.b65aa7c5.chunk.js.map",
-    "index.html": "/speed-typing-game/index.html",
-    "precache-manifest.1e3fcaa149bc06d4f8a75cdb1c497ce1.js": "/speed-typing-game/precache-manifest.1e3fcaa149bc06d4f8a75cdb1c497ce1.js",
-    "service-worker.js": "/speed-typing-game/service-worker.js",
-    "static/css/main.348232f0.chunk.css.map": "/speed-typing-game/static/css/main.348232f0.chunk.css.map",
-    "static/js/2.b65aa7c5.chunk.js.LICENSE": "/speed-typing-game/static/js/2.b65aa7c5.chunk.js.LICENSE",
-    "static/media/style.css": "/speed-typing-game/static/media/lukas-blazek-EWDvHNNfUmQ-unsplash.c4cfed74.jpg"
+    "main.css": "/reactSpeedTyingGame/static/css/main.9ebf0575.chunk.css",
+    "main.js": "/reactSpeedTyingGame/static/js/main.41c257fc.chunk.js",
+    "main.js.map": "/reactSpeedTyingGame/static/js/main.41c257fc.chunk.js.map",
+    "runtime-main.js": "/reactSpeedTyingGame/static/js/runtime-main.0eb8f39b.js",
+    "runtime-main.js.map": "/reactSpeedTyingGame/static/js/runtime-main.0eb8f39b.js.map",
+    "static/js/2.7f21e138.chunk.js": "/reactSpeedTyingGame/static/js/2.7f21e138.chunk.js",
+    "static/js/2.7f21e138.chunk.js.map": "/reactSpeedTyingGame/static/js/2.7f21e138.chunk.js.map",
+    "index.html": "/reactSpeedTyingGame/index.html",
+    "precache-manifest.2efa9b9c02a84c7c173ce6e6406c325d.js": "/reactSpeedTyingGame/precache-manifest.2efa9b9c02a84c7c173ce6e6406c325d.js",
+    "service-worker.js": "/reactSpeedTyingGame/service-worker.js",
+    "static/css/main.9ebf0575.chunk.css.map": "/reactSpeedTyingGame/static/css/main.9ebf0575.chunk.css.map",
+    "static/js/2.7f21e138.chunk.js.LICENSE": "/reactSpeedTyingGame/static/js/2.7f21e138.chunk.js.LICENSE",
+    "static/media/style.css": "/reactSpeedTyingGame/static/media/lukas-blazek-EWDvHNNfUmQ-unsplash.c4cfed74.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a553ce49.js",
-    "static/js/2.b65aa7c5.chunk.js",
-    "static/css/main.348232f0.chunk.css",
-    "static/js/main.3b4f7c87.chunk.js"
+    "static/js/runtime-main.0eb8f39b.js",
+    "static/js/2.7f21e138.chunk.js",
+    "static/css/main.9ebf0575.chunk.css",
+    "static/js/main.41c257fc.chunk.js"
   ]
 }
