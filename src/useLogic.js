@@ -1,8 +1,7 @@
 import {useState, useRef} from "react"
 
 function useLogic(){
-    const STARTING_TIME = 5
-
+    const STARTING_TIME = 15
   const [text, setText] = useState();
   const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME);
   const [isTimeRunning, setIsTimeRunning] = useState(false);
