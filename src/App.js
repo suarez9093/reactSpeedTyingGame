@@ -1,47 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, {useEffect} from "react";
+import useLogic from "./useLogic";
 
 
 function App() {
-  const STARTING_TIME = 5
-
-  const [text, setText] = useState();
-  const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME);
-  const [isTimeRunning, setIsTimeRunning] = useState(false);
-  const [wordCount, setWordCount] = useState(0);
-  const [wordsPerMinute, setWordsPerMinute] = useState();
-  const textBoxRef = useRef(null);
-
-  function handleChange(e) {
-    const { value } = e.target;
-
-    setText(value)
-  }
-
-  function calculateWordCount(text) {
-    const wordsArr = text.trim().split(" ");
-    const filteredWords = wordsArr.filter(word => word !== "")
-    setWordCount(filteredWords.length)
-  }
-
-  function startGame() {
-    setTimeRemaining(STARTING_TIME);
-    setIsTimeRunning(true)
-    setWordCount(0)
-    setText("")
-    textBoxRef.current.disabled = false
-    textBoxRef.current.focus()
-  }
-
-  function endGame() {
-    setIsTimeRunning(false)
-    calculateWordCount(text)
-  }
-
-  function calculateWordsPerMinute() {
-    let time = 60 + STARTING_TIME;
-    let words = `You type ${Math.round(wordCount / time * 60)} wpm`;
-    setWordsPerMinute(words)
-  };
+  const {text, timeRemaining, isTimeRunning, wordCount, wordsPerMinute, textBoxRef, handleChange, setTimeRemaining, startGame, endGame, calculateWordsPerMinute} = useLogic();
+  
 
   useEffect(() => {
     if (isTimeRunning && timeRemaining !== 0) {
