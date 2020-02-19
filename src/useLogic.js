@@ -1,7 +1,7 @@
 import {useState, useRef} from "react"
 
 function useLogic(){
-    const STARTING_TIME = 15
+    const STARTING_TIME = 10
   const [text, setText] = useState();
   const [timeRemaining, setTimeRemaining] = useState(STARTING_TIME);
   const [isTimeRunning, setIsTimeRunning] = useState(false);
@@ -36,8 +36,8 @@ function useLogic(){
   }
 
   function calculateWordsPerMinute() {
-    let time = 60 + STARTING_TIME;
-    let words = `You type ${Math.round(wordCount / time * 60)} wpm`;
+    // let time = 60 + STARTING_TIME;
+    let words = `You typed ${wordCount} words`;
     setWordsPerMinute(words)
   };
 

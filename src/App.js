@@ -31,7 +31,7 @@ function App() {
       />
       <h4>Time remaining: {timeRemaining} seconds </h4>
       <button disabled={isTimeRunning} onClick={startGame}>Start Game</button>
-      <h1>Word Count: {wordCount}</h1>
+      {/* <h1>Word Count: {wordCount}</h1> */}
       <h1>{wordsPerMinute}</h1>
     </div>
   );
